@@ -24,6 +24,48 @@ harjutus-6
       			echo "$a on väiksem kui $b";
       		}
       	?>
+      	<?php
+      		if ($b < $a) {
+      			// Kuna see on tõene, siis väljastatakse see tekst.
+        		echo "$b on väiksem kui $a";
+    		} elseif ($a = $a) {
+        		// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$a on $a";
+    		} elseif ($b > $a) {
+    			// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$a on suurem kui $b";      
+    		}
+    		echo "<br>";
+    	?>
+    	<?php
+    		$a = 5;
+      		$b = 5;
+      		if ($b < $a) {
+      			// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$b on väiksem kui $a";
+    		} elseif ($a = $a) {
+        		// Kuna see on tõene, siis väljastatakse see tekst.
+        		echo "$a on $b";
+    		} elseif ($b > $a) {
+    			// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$a on suurem kui $b";      
+    		}
+    		echo "<br>";
+    	?>
+    	<?php
+    		$a = 7;
+      		$b = 2;
+      		if ($b < $a) {
+      			// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$b on väiksem kui $a";
+    		} elseif ($a = $a) {
+        		// Kuna see ei ole tõene, siis ei väljastata seda teksti.
+        		echo "$a on $b";
+    		} elseif ($b > $a) {
+    			// Kuna see on tõene, siis väljastatakse see tekst.
+        		echo "$a on suurem kui $b";      
+    		}
+    	?>
    </body>
 
 </html>
